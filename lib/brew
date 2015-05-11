@@ -52,7 +52,8 @@ run_brew() {
 
 
 
-	brew install caskroom/cask/brew-cask
+        e_header "Installing caskroom/cask/brew-cask..."
+        brew install caskroom/cask/brew-cask
 
         installcask dropbox
         installcask google-chrome
