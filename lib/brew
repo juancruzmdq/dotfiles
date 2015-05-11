@@ -61,7 +61,10 @@ run_brew() {
         installcask vlc
         installcask transmission
         installcask the-unarchiver
-
+        installcask opera
+        installcask firefox
+        installcask skype
+        installcask hipchat
 
         # Remove outdated versions from the Cellar
         brew cleanup

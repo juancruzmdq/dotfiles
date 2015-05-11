@@ -47,7 +47,7 @@ prompt_git() {
 
         [ -n "$s" ] && s=" [$s]"
 
-        printf "%s" "$1($branchName)\[\033[45m\]$s"
+        printf "$1($branchName)\033[1;35m$s"
     else
         return
     fi

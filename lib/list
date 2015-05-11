@@ -6,32 +6,28 @@ cat <<EOT
 
 OS X dotfiles - Juan Cruz Ghigliani - http://juancruzmdq.com.ar/
 
-Additional software to install
+Additional software installed
 
-Browsers:
-    Firefox
-    Google Chrome
-    Opera
+With brew
+    git
+    ack
+    bash
+    bash-completion
+    node
+    rsync
+    wget
 
-Development:
-    Filezilla
-    iTerm 2
-    ImageAlpha
-    ImageOptim
-    VirtualBox
-    XAMPP
-
-Other:
-    Alfred
-    Divvy
+With brew-cask
     Dropbox
-    Flux
-    KeePassX
-    LimeChat
-    Network Connect
-    Skype
-    uTorrent
+    Google Chrome
+    Firefox
+    Opera
+    VirtualBox
     VLC
+    Transmission
+    the-unarchiver
+
+
 EOT
 
 }
