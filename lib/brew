@@ -50,6 +50,18 @@ run_brew() {
         # install separately from the main formulae list to fix gh-19
         brew install https://raw.github.com/Homebrew/homebrew-dupes/master/rsync.rb
 
+
+
+	brew install caskroom/cask/brew-cask
+
+        installcask dropbox
+        installcask google-chrome
+        installcask virtualbox
+        installcask vlc
+        installcask transmission
+        installcask the-unarchiver
+
+
         # Remove outdated versions from the Cellar
         brew cleanup
     else
@@ -60,3 +72,12 @@ run_brew() {
     fi
 
 }
+
+function installcask() {
+	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+		brew cask install "${@}"
+	else
+		echo "${@} is already installed."
+	fi
+}
+
