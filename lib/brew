@@ -6,7 +6,7 @@ run_brew() {
     if type_exists 'brew'; then
         e_header "Updating Homebrew..."
         # Use the latest version of Homebrew
-        brew update
+        brew update --all
         [[ $? ]] && e_success "Done"
 
         e_header "Updating any existing Homebrew formulae..."
@@ -64,7 +64,7 @@ run_brew() {
 
         e_header "Updating any existing Homebrew Cask formulae..."
         # Upgrade any already-installed formulae
-        brew upgrade
+        brew upgrade --al
         [[ $? ]] && e_success "Done"
 
 
