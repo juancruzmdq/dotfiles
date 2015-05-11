@@ -47,7 +47,7 @@ prompt_git() {
 
         [ -n "$s" ] && s=" [$s]"
 
-        printf "%s" "$1$branchName$s"
+        printf "%s" "$1($branchName)$s"
     else
         return
     fi
@@ -88,7 +88,7 @@ set_prompts() {
     PS1+="$C_BLUE\h "
     PS1+="$C_DARKGRAY: "
     PS1+="$C_LIGHTYELLOW\w "
-    PS1+="$C_DARKGRAY "
+    PS1+="$C_DARKGRAY"
     PS1+="$C_RED\$(prompt_git) "
     PS1+="$C_DARKGRAY\$$C_DEFAULT\n"
     PS1+="| => "
