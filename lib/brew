@@ -55,6 +55,8 @@ run_brew() {
         e_header "Installing caskroom/cask/brew-cask..."
         brew install caskroom/cask/brew-cask
 
+        export HOMEBREW_CASK_OPTS="--appdir=/Applications
+
         installcask dropbox
         installcask google-chrome
         installcask virtualbox
