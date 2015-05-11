@@ -55,7 +55,6 @@ run_brew() {
         e_header "Installing caskroom/cask/brew-cask..."
         brew install caskroom/cask/brew-cask
 
-        export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
         e_header "Updating Homebrew Cask..."
         # Use the latest version of Homebrew
@@ -93,7 +92,7 @@ run_brew() {
 
 function installcask() {
 	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
-		brew cask install "${@}"
+		brew cask install --appdir=/Applications "${@}"
 	else
 		echo "${@} is already installed."
 	fi
