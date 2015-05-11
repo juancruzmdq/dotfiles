@@ -57,6 +57,17 @@ run_brew() {
 
         export HOMEBREW_CASK_OPTS="--appdir=/Applications
 
+        e_header "Updating Homebrew Cask..."
+        # Use the latest version of Homebrew
+        brew cask update
+        [[ $? ]] && e_success "Done"
+
+        e_header "Updating any existing Homebrew Cask formulae..."
+        # Upgrade any already-installed formulae
+        brew upgrade
+        [[ $? ]] && e_success "Done"
+
+
         installcask dropbox
         installcask google-chrome
         installcask virtualbox
