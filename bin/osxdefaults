@@ -7,13 +7,13 @@
 # ----------------------------------------------------------------------
 
 # Disable Menu bar transparency
-defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
 
 # Enable snap-to-grid for desktop icons
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
@@ -28,7 +28,7 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
@@ -48,8 +48,8 @@ defaults write com.apple.dock mru-spaces -bool false
 # Dock: enable the 2D Dock
 defaults write com.apple.dock no-glass -bool true
 
-# Dock: position the Dock on the left
-defaults write com.apple.dock orientation left
+# Dock: position the Dock on the bottom
+defaults write com.apple.dock orientation bottom
 
 # Dock: set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
@@ -60,8 +60,8 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Dock: make icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Dock: don’t animate opening applications
-defaults write com.apple.dock launchanim -bool false
+# Dock:  animate opening applications
+defaults write com.apple.dock launchanim -bool true
 
 # Dock: use the scale effect for window minimizing
 defaults write com.apple.dock mineffect scale
@@ -91,8 +91,8 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Finder: show the ~/Library folder (in OS X Lion)
 chflags nohidden ~/Library
 
-# Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: don't show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: use list view in all windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
