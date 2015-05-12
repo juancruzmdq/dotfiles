@@ -11,7 +11,7 @@ run_brew() {
 
         e_header "Updating any existing Homebrew formulae..."
         # Upgrade any already-installed formulae
-        brew upgrade
+        brew upgrade --all
         [[ $? ]] && e_success "Done"
 
         e_header "Checking status of desired Homebrew formulae..."
@@ -59,7 +59,7 @@ run_brew() {
 
         e_header "Updating Homebrew Cask..."
         # Use the latest version of Homebrew
-        brew cask update
+        brew cask update --all
         [[ $? ]] && e_success "Done"
 
         e_header "Updating any existing Homebrew Cask formulae..."
@@ -81,6 +81,7 @@ run_brew() {
         installcask cleanmymac
         installcask atom
         installcask copy
+        installcask charles
 
         # Remove outdated versions from the Cellar
         brew cleanup

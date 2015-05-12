@@ -28,7 +28,9 @@ With brew-cask
     the-unarchiver
     hipchat
     cleanmymac
+    atom
     copy
+    charles
 
 EOT
 
