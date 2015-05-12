@@ -25,6 +25,7 @@ run_brew() {
             'node'
             'rsync'
             'wget'
+            'heroku-toolbelt'
         )
 
         for index in ${!desired_formulae[*]}
@@ -78,6 +79,7 @@ run_brew() {
         installcask skype
         installcask hipchat
         installcask cleanmymac
+        installcask atom
 
         # Remove outdated versions from the Cellar
         brew cleanup
