@@ -64,7 +64,7 @@ run_brew() {
 
         e_header "Updating any existing Homebrew Cask formulae..."
         # Upgrade any already-installed formulae
-        brew upgrade --al
+        brew upgrade --all
         [[ $? ]] && e_success "Done"
 
 
