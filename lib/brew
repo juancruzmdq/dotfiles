@@ -82,6 +82,7 @@ run_brew() {
         installcask atom
         installcask copy
         installcask charles
+        installcask hockey
 
         # Remove outdated versions from the Cellar
         brew cleanup
