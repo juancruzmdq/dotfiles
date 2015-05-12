@@ -16,6 +16,7 @@ With brew
     node
     rsync
     wget
+    heroku-toolbelt
 
 With brew-cask
     Dropbox
