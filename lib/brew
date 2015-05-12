@@ -80,6 +80,7 @@ run_brew() {
         installcask hipchat
         installcask cleanmymac
         installcask atom
+        installcask copy
 
         # Remove outdated versions from the Cellar
         brew cleanup
@@ -99,4 +100,3 @@ function installcask() {
 		echo "${@} is already installed."
 	fi
 }
-
