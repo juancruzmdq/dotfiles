@@ -301,7 +301,7 @@ defaults write com.apple.spotlight orderedItems -array \
 
 echo ""
 echo "Load new settings before rebuilding the index"
-killall mds > /dev/null 2>&1
+#killall mds > /dev/null 2>&1
 
 echo ""
 echo "Make sure indexing is enabled for the main volume"
@@ -400,5 +400,3 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact
