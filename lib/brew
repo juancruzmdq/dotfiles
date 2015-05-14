@@ -79,7 +79,7 @@ run_brew() {
         installcask copy
         installcask charles
         installcask hockey
-        installcask spectacle
+        installcask spectacle 
 
         # Remove outdated versions from the Cellar
         brew cleanup
