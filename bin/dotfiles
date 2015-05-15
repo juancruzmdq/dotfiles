@@ -22,6 +22,7 @@ source ./lib/help
 source ./lib/list
 source ./lib/utils
 source ./lib/brew
+source ./lib/brewcask
 
 
 # Help text
@@ -96,9 +97,12 @@ fi
 if [[ $no_packages ]]; then
     printf "Skipped package installations.\n"
 else
-    printf "Updating packages...\n"
+    printf "Updating Brew packages...\n"
     # Install Homebrew formulae
     run_brew
+    printf "Updating Brew Cask packages...\n"
+    # Install Homebrew formulae
+    run_brewcask
     # Install Node packages
     # run_npm
 fi
@@ -139,8 +143,7 @@ if is_confirmed; then
     mirrorfiles
     source ${HOME}/.bash_profile
 else
-    printf "Aborting...\n"
-    exit 1
+  printf "Skipped Dotfiles update.\n"
 fi
 
 # Ask before potentially overwriting OS X defaults

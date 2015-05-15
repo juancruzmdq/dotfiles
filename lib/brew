@@ -47,42 +47,6 @@ run_brew() {
             [[ $? ]] && e_success "Done"
         fi
 
-
-        e_header "Installing caskroom/cask/brew-cask..."
-        brew tap caskroom/cask
-        brew install brew-cask
-
-
-        e_header "Updating Homebrew Cask..."
-        # Use the latest version of Homebrew
-        brew cask update --all
-        [[ $? ]] && e_success "Done"
-
-        e_header "Updating any existing Homebrew Cask formulae..."
-        # Upgrade any already-installed formulae
-        brew upgrade --all
-        [[ $? ]] && e_success "Done"
-
-
-        installcask dropbox
-        installcask google-chrome
-        installcask virtualbox
-        installcask vlc
-        installcask transmission
-        installcask the-unarchiver
-        installcask opera
-        installcask firefox
-        installcask skype
-        installcask hipchat
-        installcask cleanmymac
-        installcask atom
-        installcask copy
-        installcask charles
-        installcask hockey
-        installcask spectacle
-        installcask iexplorer 
-        installcask droplr
-
         # Remove outdated versions from the Cellar
         brew cleanup
     else
@@ -92,12 +56,4 @@ run_brew() {
         exit
     fi
 
-}
-
-function installcask() {
-	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
-		brew cask install --appdir=/Applications "${@}"
-	else
-		echo "${@} is already installed."
-	fi
 }

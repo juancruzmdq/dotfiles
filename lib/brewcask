@@ -1,0 +1,66 @@
+#!/bin/bash
+
+run_brewcask() {
+
+    # Check for Homebrew
+    if type_exists 'brew'; then
+
+
+        if ! formula_exists brew-cask; then
+          e_header "Installing caskroom/cask/brew-cask..."
+          brew tap caskroom/cask
+          brew install brew-cask
+        fi
+
+
+        e_header "Updating Homebrew Cask..."
+        # Use the latest version of Homebrew
+        brew cask update --all
+        [[ $? ]] && e_success "Done"
+
+
+        local -a desired_formulae=(
+          'dropbox'
+          'google-chrome'
+          'virtualbox'
+          'vlc'
+          'transmission'
+          'the-unarchiver'
+          'opera'
+          'firefox'
+          'skype'
+          'hipchat'
+          'cleanmymac'
+          'atom'
+          'copy'
+          'charles'
+          'hockey'
+          'spectacle'
+          'iexplorer'
+          'droplr'
+        )
+
+        printf "\n"
+        for index in ${!desired_formulae[*]}
+        do
+          installcask ${desired_formulae[$index]}
+        done
+
+        # Remove outdated versions from the Cellar
+        brew cask cleanup
+    else
+        printf "\n"
+        e_error "Error: Homebrew not found."
+        printf "Aborting...\n"
+        exit
+    fi
+
+}
+
+function installcask() {
+	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+		brew cask install --appdir=/Applications "${@}"
+	else
+		echo "${@} is already installed."
+	fi
+}
