@@ -2,7 +2,7 @@
 
 My OS X dotfiles.
 
-![Alt text](/dotfiles/blob/master/bash.png?raw=true "Optional Title")
+![Alt text](/bash.png?raw=true "Bash Example")
 
 
 ## How to install
