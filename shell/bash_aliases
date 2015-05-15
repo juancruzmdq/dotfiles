@@ -129,7 +129,7 @@ alias cleansystem='sudo periodic daily weekly monthly'
 
 #   Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 #   -----------------------------------------------------------------------------------
-alias updatesystem='sudo softwareupdate -i -a; brew update --all; brew upgrade --all; brew upgrade brew-cask ; brew cask update --all ; brew upgrade --all ; brew cleanup; brew cask cleanup ; npm update npm -g; npm update -g; sudo gem update'
+alias updatesystem='sudo softwareupdate -i -a; brew update --all; brew upgrade --all ; brew cask update --all ; brew upgrade --all ; brew cleanup; brew cask cleanup ; npm update npm -g; npm update -g; sudo gem update'
 
 #    screensaverDesktop: Run a screensaver on the Desktop
 #   -----------------------------------------------------------------------------------
