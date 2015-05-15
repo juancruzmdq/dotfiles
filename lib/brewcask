@@ -38,6 +38,8 @@ run_brewcask() {
           'spectacle'
           'iexplorer'
           'droplr'
+          'spotify'
+          'flux'
         )
 
         printf "\n"
