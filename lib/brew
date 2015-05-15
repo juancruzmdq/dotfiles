@@ -82,6 +82,7 @@ run_brew() {
         installcask spectacle
         installcask iexplorer 
         installcask droplr
+        installcask spotify
 
         # Remove outdated versions from the Cellar
         brew cleanup
