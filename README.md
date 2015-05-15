@@ -2,6 +2,8 @@
 
 My OS X dotfiles.
 
+![Alt text](/bash.png?raw=true "Bash Example")
+
 
 ## How to install
 
