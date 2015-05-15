@@ -83,6 +83,7 @@ run_brew() {
         installcask iexplorer 
         installcask droplr
         installcask spotify
+        installcask flux
 
         # Remove outdated versions from the Cellar
         brew cleanup
