@@ -2,6 +2,8 @@
 
 My OS X dotfiles.
 
+![Alt text](/dotfiles/blob/master/bash.png?raw=true "Optional Title")
+
 
 ## How to install
 
