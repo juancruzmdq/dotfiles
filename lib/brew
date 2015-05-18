@@ -26,6 +26,7 @@ run_brew() {
             'rsync'
             'wget'
             'heroku-toolbelt'
+            'fish'
         )
 
         for index in ${!desired_formulae[*]}

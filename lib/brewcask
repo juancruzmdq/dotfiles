@@ -40,6 +40,8 @@ run_brewcask() {
           'droplr'
           'spotify'
           'flux'
+          'gimp'
+          'android-sdk'
         )
 
         printf "\n"
