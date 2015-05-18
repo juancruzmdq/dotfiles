@@ -41,7 +41,6 @@ run_brewcask() {
           'spotify'
           'flux'
           'gimp'
-          'android-sdk'
         )
 
         printf "\n"

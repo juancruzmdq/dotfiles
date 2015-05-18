@@ -27,6 +27,7 @@ run_brew() {
             'wget'
             'heroku-toolbelt'
             'fish'
+            'android-sdk'
         )
 
         for index in ${!desired_formulae[*]}
