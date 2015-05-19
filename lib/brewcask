@@ -42,6 +42,7 @@ run_brewcask() {
           'flux'
           'gimp'
           'alfred'
+          'dash'
         )
 
         printf "\n"
