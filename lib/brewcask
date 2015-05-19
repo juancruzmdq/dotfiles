@@ -43,6 +43,7 @@ run_brewcask() {
           'gimp'
           'alfred'
           'dash'
+          'genymotion'
         )
 
         printf "\n"
