@@ -69,7 +69,35 @@ Homebrew formulae:
 * [node](https://nodejs.org/)
 * [rsync](https://rsync.samba.org/) (latest version, rather than the out-dated OS X installation)
 * [wget](http://www.gnu.org/software/wget/)
+* heroku-toolbelt
+* fish
+* android-sdk
 
+Homebrew Cask formulae (caskroom/cask/brew-cask):
+
+* dropbox
+* google-chrome
+* virtualbox
+* vlc
+* transmission
+* the-unarchiver
+* opera
+* firefox
+* skype
+* hipchat
+* cleanmymac
+* atom
+* copy
+* charles
+* hockey
+* spectacle
+* iexplorer
+* droplr
+* spotify
+* flux
+* gimp
+* alfred
+* dash
 
 ### Custom OS X defaults
 
