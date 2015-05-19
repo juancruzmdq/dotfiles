@@ -17,6 +17,8 @@ With brew
     rsync
     wget
     heroku-toolbelt
+    fish
+    android-sdk
 
 With brew-cask
     Dropbox
@@ -33,6 +35,14 @@ With brew-cask
     copy
     charles
     hockey
+    spectacle
+    iexplorer
+    droplr
+    spotify
+    flux
+    gimp
+    alfred
+    dash
 
 EOT
 
