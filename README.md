@@ -98,6 +98,7 @@ Homebrew Cask formulae (caskroom/cask/brew-cask):
 * gimp
 * alfred
 * dash
+* genymotion
 
 ### Custom OS X defaults
 
