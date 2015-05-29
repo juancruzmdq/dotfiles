@@ -249,9 +249,9 @@ initialized) in their local repository. N.B This will wipe away any local
 changes made to those submodules.
 
 
-### XCode
+## XCode
 
-#Create Folder for Themes:
+### Create Folder for Themes:
 
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cd ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
@@ -259,17 +259,17 @@ cd ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 Copy all *.dvtcolortheme files into ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
 
-#Create Folder for Templates:
+### Create Folder for Templates:
 
 mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates
 cd ~/Library/Developer/Xcode/Templates/File\ Templates
 
 Copy jcgSoftware into ~/Library/Developer/Xcode/Templates/File\ Templates
 
-# TODOMacros
+### TODOMacros
 Copy and include TODOMacros.h into your project
 
-# Project structure
+### Project structure
 
 ProjectName
   Classes
@@ -290,9 +290,9 @@ ProjectName
   Frameworks
   Products
 
-# [Coding guideline](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+### [Coding guideline](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 
-# [install cocoapods](https://guides.cocoapods.org/using/using-cocoapods.html)
+### [install cocoapods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 [sudo] gem install cocoapods
 
