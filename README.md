@@ -268,7 +268,9 @@ Copy jcgSoftware into ~/Library/Developer/Xcode/Templates/File\ Templates
 ```
 
 ### TODOMacros
+```bash
 Copy and include TODOMacros.h into your project
+```
 
 ### Project structure
 ```bash
@@ -292,9 +294,13 @@ ProjectName
   Products
   ```
 
-### [Coding guideline](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+### Coding Guidelines
 
-### [install cocoapods](https://guides.cocoapods.org/using/using-cocoapods.html)
+[Apple Guidelines](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+
+### install cocoapods
+[documentation](https://guides.cocoapods.org/using/using-cocoapods.html)
+
 ```bash
 [sudo] gem install cocoapods
 ```
