@@ -71,3 +71,7 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 ### Chequear Warnings en Xcode
 http://boredzo.org/blog/archives/2009-11-07/warnings
 
+Si trabajamos con librerías de terceros, es muy probable —aunque poco deseable— con los desarrolladores de las mismas hayan dejado warnings pendientes. Si no queremos tener que meter mano en dichas librerías pero tampoco queremos que sus warnings nos abrasen, tan solo tendremos que ir a la sección BUILD PHASES de nuestro target, acceder al apartado COMPILE SOURCES y buscar los archivos protestones. Lo siguiente será hacer doble clic sobre cada uno de ellos y añadirles los flag 
+```bash
+-w -Xanalyzer -analyzer-disable-checker.
+```
