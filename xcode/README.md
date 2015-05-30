@@ -75,3 +75,9 @@ Si trabajamos con librerías de terceros, es muy probable —aunque poco deseabl
 ```bash
 -w -Xanalyzer -analyzer-disable-checker.
 ```
+
+
+### ARC Best Practices
+
+* http://amattn.com/p/arc_best_practices.html
+* http://www.idryman.org/blog/2012/11/22/arc-best-practices-and-pitfalls/
