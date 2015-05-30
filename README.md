@@ -306,8 +306,11 @@ ProjectName
 ```
 
 ### Alcatraz (Xcode plugin manager)
-[Site](http://alcatraz.io/)
-https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh
+http://alcatraz.io/
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+```
 
 * https://imageoptim.com/xcode.html
 
