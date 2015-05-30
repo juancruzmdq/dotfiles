@@ -305,6 +305,11 @@ ProjectName
 [sudo] gem install cocoapods
 ```
 
+### Alcatraz (Xcode plugin manager)
+[Site](http://alcatraz.io/)
+https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh
+
+* https://imageoptim.com/xcode.html
 
 ## Acknowledgements
 
