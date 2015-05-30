@@ -67,3 +67,7 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 * http://nvie.com/posts/a-successful-git-branching-model/
 * http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
 * http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+
+### Chequear Warnings en Xcode
+http://boredzo.org/blog/archives/2009-11-07/warnings
+
