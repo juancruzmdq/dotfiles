@@ -64,6 +64,6 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 * https://imageoptim.com/xcode.html
 
 ### Git Flow
-http://nvie.com/posts/a-successful-git-branching-model/
-http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
-http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+* http://nvie.com/posts/a-successful-git-branching-model/
+* http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+* http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
