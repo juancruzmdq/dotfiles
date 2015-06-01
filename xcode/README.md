@@ -1,5 +1,7 @@
 ## XCode Setup
 
+http://brian-webster.tumblr.com/post/22060296528/how-to-make-xcode-4s-ui-work-for-you-maybe
+
 ### Create Folder for Themes:
 ```bash
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
