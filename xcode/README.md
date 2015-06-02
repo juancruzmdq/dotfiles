@@ -32,7 +32,7 @@ ProjectName
   Resources
     Images
     Plist
-    XIBs
+    Nibs
     Storyboards
     Sounds
     Video
@@ -72,6 +72,8 @@ https://rvm.io/integration/bundler
 $ gem install bundler
 ```
 
+
+
 ### install cocoapods
 [documentation](https://guides.cocoapods.org/using/using-cocoapods.html)
 
@@ -95,6 +97,18 @@ and include inside Podfile
 ```bash
 inhibit_all_warnings!
 ```
+
+### Create project with liftoff
+https://github.com/thoughtbot/liftoff
+
+In this folder there are a setting'g file for liftoff. It should be copied to ~/.liftoffrc
+and then execute
+
+```bash
+$ liftoff
+```
+
+
 
 ### TODOMacros
 ```bash

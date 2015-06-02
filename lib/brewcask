@@ -45,6 +45,7 @@ run_brewcask() {
           'dash'
           'genymotion'
           'gpgtools'
+          'imageoptim'
         )
 
         printf "\n"
