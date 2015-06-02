@@ -4,6 +4,9 @@ run_brew() {
 
     # Check for Homebrew
     if type_exists 'brew'; then
+        e_header "Adding thoughtbot formulae..."
+        brew tap thoughtbot/formulae
+
         e_header "Updating Homebrew..."
         # Use the latest version of Homebrew
         brew update --all
@@ -28,6 +31,7 @@ run_brew() {
             'heroku-toolbelt'
             'fish'
             'android-sdk'
+            'liftoff'
         )
 
         for index in ${!desired_formulae[*]}

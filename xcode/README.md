@@ -1,4 +1,5 @@
 ## XCode Setup
+Use tabs in xcode as views for differents kind of task
 
 http://brian-webster.tumblr.com/post/22060296528/how-to-make-xcode-4s-ui-work-for-you-maybe
 
@@ -18,10 +19,6 @@ cd ~/Library/Developer/Xcode/Templates/File\ Templates
 Copy jcgSoftware into ~/Library/Developer/Xcode/Templates/File\ Templates
 ```
 
-### TODOMacros
-```bash
-Copy and include TODOMacros.h into your project
-```
 
 ### Project structure
 ```bash
@@ -31,29 +28,77 @@ ProjectName
     Controllers
     Helpers
     Models
+    Views
   Resources
     Images
-    NIBs
+    Plist
+    XIBs
+    Storyboards
     Sounds
     Video
   Supporting Files
     main.m
     prefix.pch
     info.plist
-  Vendor
+  Vendors
   Frameworks
   Products
+  .gitignore
+  .gitattribute
+  Podfile
+  Gemfile
   ```
 
-### Coding Guidelines
+### install rvm
+https://rvm.io/rvm/install
 
-[Apple Guidelines](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+```bash
+$ curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+$ rvm install 2.1
+
+$ rvm use 2.1 --default
+
+$ rvm gemset create ProjectName
+
+$ rvm gemset use ProjectName
+```
+
+
+### install gem bundle
+https://rvm.io/integration/bundler
+
+```bash
+$ gem install bundler
+```
 
 ### install cocoapods
 [documentation](https://guides.cocoapods.org/using/using-cocoapods.html)
 
+Create a file with the name Gemfile with this content
+
 ```bash
-[sudo] gem install cocoapods
+source 'http://rubygems.org'
+gem 'cocoapods', '~> 0.28'
+```
+
+```bash
+$ bundle install
+
+$ bundle exec pod --version
+$ bundle exec pod init
+
+```
+
+and include inside Podfile
+
+```bash
+inhibit_all_warnings!
+```
+
+### TODOMacros
+```bash
+Copy and include TODOMacros.h into your project
 ```
 
 ### Alcatraz (Xcode plugin manager)
@@ -73,11 +118,14 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 ### Chequear Warnings en Xcode
 http://boredzo.org/blog/archives/2009-11-07/warnings
 
-Si trabajamos con librerías de terceros, es muy probable —aunque poco deseable— con los desarrolladores de las mismas hayan dejado warnings pendientes. Si no queremos tener que meter mano en dichas librerías pero tampoco queremos que sus warnings nos abrasen, tan solo tendremos que ir a la sección BUILD PHASES de nuestro target, acceder al apartado COMPILE SOURCES y buscar los archivos protestones. Lo siguiente será hacer doble clic sobre cada uno de ellos y añadirles los flag 
+Si trabajamos con librerías de terceros, es muy probable —aunque poco deseable— con los desarrolladores de las mismas hayan dejado warnings pendientes. Si no queremos tener que meter mano en dichas librerías pero tampoco queremos que sus warnings nos abrasen, tan solo tendremos que ir a la sección BUILD PHASES de nuestro target, acceder al apartado COMPILE SOURCES y buscar los archivos protestones. Lo siguiente será hacer doble clic sobre cada uno de ellos y añadirles los flag
 ```bash
 -w -Xanalyzer -analyzer-disable-checker.
 ```
 
+### Coding Guidelines
+
+[Apple Guidelines](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 
 ### ARC Best Practices
 
