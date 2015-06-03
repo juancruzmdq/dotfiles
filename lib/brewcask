@@ -46,6 +46,7 @@ run_brewcask() {
           'genymotion'
           'gpgtools'
           'imageoptim'
+          'doxygen'
         )
 
         printf "\n"
