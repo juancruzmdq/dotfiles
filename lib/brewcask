@@ -39,7 +39,7 @@ run_brewcask() {
           'iexplorer'
           'droplr'
           'spotify'
-          'flux'
+          #'flux'
           'gimp'
           'alfred'
           'dash'
