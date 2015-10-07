@@ -46,7 +46,7 @@ run_brewcask() {
           'genymotion'
           'gpgtools'
           'imageoptim'
-          'java'
+          #'java'
         )
 
         printf "\n"
