@@ -4,15 +4,15 @@
 
 # Directories to be prepended to PATH
 declare -a dirs_to_prepend=(
-    "/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
+    #"/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
 )
 
 # Directories to be appended to PATH
 declare -a dirs_to_append=(
-    "/usr/bin"
+    #"/usr/bin"
     "$HOME/bin"
     "$HOME/.dotfiles/bin"
-    "$HOME/.rvm/bin"
+    #"$HOME/.rvm/bin"
 )
 
 # Prepend directories to PATH
