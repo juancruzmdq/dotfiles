@@ -2,8 +2,8 @@
 
 # bash_config
 
-# Make vim the default editor
-export EDITOR=/usr/bin/nano
+# Make nano the default editor
+export EDITOR=/usr/local/bin/nano 
 
 # Set default blocksize for ls, df, du
 export BLOCKSIZE=1k
