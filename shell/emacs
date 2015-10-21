@@ -1,5 +1,10 @@
-;; Create Backup folder
+;; Enable mouse - Temporally disabled 
+;; (require 'mouse)
+;; (xterm-mouse-mode t)
+;; (defun track-mouse (e))
+;; (setq mouse-sel-mode t)
 
+;; Create Backup folder
 (unless (file-exists-p "~/.saves/")
     (make-directory "~/.saves/"))
 
