@@ -1,0 +1,16 @@
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . "~/.saves")))
+(setq auto-save-file-name-transforms
+      `((".*" "~/.saves/" t)))
+
+;; Delete old store backup/autosave files
+(message "Deleting old backup files...")
+(let ((week (* 60 60 24 7))
+      (current (float-time (current-time))))
+  (dolist (file (directory-files "~/.saves" t))
+    (when (and (backup-file-name-p file)
+               (> (- current (float-time (nth 5 (file-attributes file))))
+                  week))
+      (message "%s" file)
+      (delete-file file))))
