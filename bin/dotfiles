@@ -130,9 +130,9 @@ mirrorfiles() {
     link "shell/bash_profile" ".bash_profile"
     link "shell/curlrc"       ".curlrc"
     link "shell/inputrc"      ".inputrc"
+    link "shell/emacs"        ".emacs"
     link "git/gitattributes"  ".gitattributes"
     link "git/gitignore"      ".gitignore"
-    link "git/emacs"          ".emacs"
 
     e_success "Dotfiles update complete!"
 }
