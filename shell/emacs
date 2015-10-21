@@ -1,3 +1,8 @@
+;; Create Backup folder
+
+(unless (file-exists-p "~/.saves/")
+    (make-directory "~/.saves/"))
+
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
       `((".*" . "~/.saves")))
