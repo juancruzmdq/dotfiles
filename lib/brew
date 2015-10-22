@@ -33,6 +33,7 @@ run_brew() {
             #'android-sdk'
             'liftoff'
             'git-flow'
+            'xctool'
         )
 
         for index in ${!desired_formulae[*]}
