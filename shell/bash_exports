@@ -3,7 +3,8 @@
 # bash_config
 
 # Make nano the default editor
-export EDITOR=/usr/local/bin/nano 
+# export EDITOR=/usr/local/bin/nano 
+export EDITOR=/usr/bin/emacs
 
 # Set default blocksize for ls, df, du
 export BLOCKSIZE=1k
