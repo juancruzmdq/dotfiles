@@ -11,6 +11,9 @@ The installation step requires the [XCode Command Line
 Tools](https://developer.apple.com/downloads) and may overwrite existing
 dotfiles in your HOME and `.vim` directories.
 
+REMEMBER: Add ssh key to github
+https://github.com/settings/ssh
+
 ```bash
 $ bash -c "$(curl -fsSL raw.github.com/juancruzmdq/dotfiles/master/bin/dotfiles)"
 ```
