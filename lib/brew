@@ -35,6 +35,7 @@ run_brew() {
             'git-flow'
             'xctool'
             'todo-txt'
+            'z'
         )
 
         for index in ${!desired_formulae[*]}
