@@ -102,6 +102,7 @@ set_prompts() {
 
 function _update_ps1() {
     PS1="$(~/.dotfiles/powerline-shell/powerline-shell.py $? 2> /dev/null)"
+    PS1+="\n "
 }
 
 function set_powerline_promps(){
