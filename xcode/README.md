@@ -121,6 +121,14 @@ $ liftoff
 ```bash
 Copy and include TODOMacros.h into your project
 ```
+### Script
+Run script util para swift
+```bash
+TAGS="TODO:|FIXME:"
+ERRORTAG="FORCE_ERROR:"
+echo "searching ${SRCROOT} for ${TAGS} and ${ERRORTAG}"
+find "${SRCROOT}" \( -name "*.h" -or -name "*.m" -or -name "*.swift" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($TAGS).*\$|($ERRORTAG).*\$" | perl -p -e "s/($TAGS)/ warning: \$1/" | perl -p -e "s/($ERRORTAG)/ error: \$1/"
+```
 
 ### Alcatraz (Xcode plugin manager)
 
@@ -160,3 +168,6 @@ Si trabajamos con librerías de terceros, es muy probable —aunque poco deseabl
 
 http://semver.org/
 Format MAJOR[.MINOR.[PATCH[-BUILD]]]
+
+
+
