@@ -135,6 +135,10 @@ alias updatesystem='sudo softwareupdate -i -a; brew update --all; brew upgrade -
 #   -----------------------------------------------------------------------------------
 alias screensaverdesktop='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background'
 
+#    secureEmptyTrash: Clean secure of Trash files
+#   -----------------------------------------------------------------------------------
+alias secureEmptyTrash ='srm -rmv ~/.Trash/*'
+
 
 # Show/hide hidden files in Finder
 alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
