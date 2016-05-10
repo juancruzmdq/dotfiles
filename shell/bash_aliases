@@ -137,7 +137,7 @@ alias screensaverdesktop='/System/Library/Frameworks/ScreenSaver.framework/Resou
 
 #    secureEmptyTrash: Clean secure of Trash files
 #   -----------------------------------------------------------------------------------
-alias secureEmptyTrash ='srm -rmv ~/.Trash/*'
+alias secureEmptyTrash='srm -rmv ~/.Trash/*'
 
 
 # Show/hide hidden files in Finder
