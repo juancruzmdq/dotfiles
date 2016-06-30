@@ -40,3 +40,4 @@ load_dotfiles() {
 
 load_dotfiles
 unset load_dotfiles
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
