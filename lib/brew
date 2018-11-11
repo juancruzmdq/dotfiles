@@ -21,21 +21,21 @@ run_brew() {
         local list_formulae
         local -a missing_formulae
         local -a desired_formulae=(
-            'git'
-            'ack'
+            #'git'
+            #'ack'
             'bash'
             'bash-completion'
             #'node'
-            'rsync'
-            'wget'
-            'heroku-toolbelt'
+            #'rsync'
+            #'wget'
+            #'heroku-toolbelt'
             #'fish'
             #'android-sdk'
-            'liftoff'
-            'git-flow'
-            'xctool'
-            'todo-txt'
-            'z'
+            #'liftoff'
+            #'git-flow'
+            #'xctool'
+            #'todo-txt'
+            #'z'
         )
 
         for index in ${!desired_formulae[*]}
