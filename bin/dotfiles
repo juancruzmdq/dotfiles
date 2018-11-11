@@ -148,11 +148,14 @@ else
 fi
 
 # Ask before potentially overwriting OS X defaults
-seek_confirmation "Warning: This step may modify your OS X system defaults."
+# DISABLE ALL OSX DEFAULTS
+# =====================
+# seek_confirmation "Warning: This step may modify your OS X system defaults."
 
-if is_confirmed; then
-    bash ./bin/osxdefaults
-    e_success "OS X settings updated! You may need to restart."
-else
-    printf "Skipped OS X settings update.\n"
-fi
+#if is_confirmed; then
+    #bash ./bin/osxdefaults
+    #e_success "OS X settings updated! You may need to restart."
+#else
+    #printf "Skipped OS X settings update.\n"
+#fi
+# =====================
